@@ -1,0 +1,16 @@
+# Databases
+/*.sqlite3
+
+# ignore directories
+__pycache__/
+env/
+.venv/
+.pytest_cache/
+htmlcov/
+
+# ignore files
+.flaskenv
+.coverage
+.env
+*.pyc
+.eslintcache
