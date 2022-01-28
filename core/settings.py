@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 APP_NAME = os.getenv('APP_NAME')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', False)
 
 ALLOWED_HOSTS = []
 
@@ -113,10 +113,8 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 MEDIA_URL = '/media/'
 
-# CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-]
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOW_CREDENTIALS = True
 
 django_heroku.settings(locals())
