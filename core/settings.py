@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+import django_heroku
 from dotenv import load_dotenv
 
 
@@ -117,3 +118,5 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+django_heroku.settings(locals())
