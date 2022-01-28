@@ -7,5 +7,4 @@ workflows:
       - heroku/deploy-via-git:
         filters:
           branches:
-            only:
-              - master
+            only: master
