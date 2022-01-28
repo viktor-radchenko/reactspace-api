@@ -1,1 +1,1 @@
-from .product import get_all_products  # noqa 401
+from .product import get_all_products, get_product  # noqa 401
